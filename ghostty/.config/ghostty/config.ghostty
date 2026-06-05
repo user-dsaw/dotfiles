@@ -1,0 +1,29 @@
+# Font
+font-family = AnonymicePro Nerd Font
+font-size = 12
+font-thicken = true
+
+# Transparency
+background-opacity = 0.93
+background-blur-radius = 12
+
+# Colors
+background = #0d0d0f
+foreground = #d4af37
+#foreground = #009915
+
+# Cursor
+#cursor-color = #009915
+cursor-color = #d4af37
+cursor-style = underline
+cursor-style-blink = true
+
+
+# Selection
+selection-background = #1a3a1f
+selection-foreground = #f0d060
+
+# Window
+window-decoration = false
+window-padding-x = 14
+window-padding-y = 10

@@ -1,0 +1,64 @@
+@import "colors.css";
+
+*{
+    all: unset;
+    font-family: "Rubik", "JetBrains Mono Nerd Font Propo", "Noto Sans CJK JP", "Noto Sans CJK KR";
+
+}
+
+.modules-center{
+    background-color: @bg1;
+    padding: 0px 10px;
+    border-radius: 99px;
+}
+
+tooltip{
+    background-color: @bg1;
+    color: @fg;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+/* tooltip box{
+    margin: 2px;
+} */
+
+#clock{
+    font-weight: 900;
+}
+
+#workspaces{
+    background-color: @bg1;
+    padding: 2px 4px;
+    margin: 2px 0;
+    border-radius: 99px;
+}
+
+#workspaces button{
+    background-color: @bg2;
+    padding: 0px 2px;
+    border-radius: 99px;
+    margin: 0 2px;
+    transition: all 200ms ease-in-out;
+    min-width: 7px;
+}
+
+#workspaces button.empty{
+    background-color: @grey4;
+}
+
+#workspaces button.active{
+    background-color: #d4af37;
+    color: #0d0d0f;
+    min-width: 1.5rem;
+    font-weight: 900;
+    transition: none;
+}
+/* #battery{
+    background-color: @blue;
+    border-radius: 99px;
+    margin: 6px 0;
+    padding: 0 6px;
+    color: @bg3;
+    letter-spacing: -1px;zzzz
+} */
