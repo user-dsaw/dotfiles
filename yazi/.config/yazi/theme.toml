@@ -1,0 +1,16 @@
+[manager]
+cwd = { fg = "#d4af37" }
+hovered = { fg = "#0d0d0d", bg = "#d4af37" }
+tab_active = { fg = "#0d0d0d", bg = "#d4af37" }
+tab_inactive = { fg = "#d4af37", bg = "#1a1a1a" }
+border_style = { fg = "#d4af37" }
+
+[status]
+mode_normal = { fg = "#0d0d0d", bg = "#d4af37", bold = true }
+mode_select = { fg = "#0d0d0d", bg = "#d4af37", bold = true }
+mode_unset  = { fg = "#0d0d0d", bg = "#d4af37", bold = true }
+
+[filetype]
+rules = [
+  { mime = "inode/directory", fg = "#d4af37" },
+]
