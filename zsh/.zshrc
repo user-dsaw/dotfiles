@@ -159,5 +159,10 @@ fi
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
+ZSH_HIGHLIGHT_STYLES[command]='fg=#d4af37'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=#d4af37'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#d4af37'
+ZSH_HIGHLIGHT_STYLES[function]='fg=#d4af37'
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#8a6f1e'
 #export FZF_DEFAULT_OPTS='--color=fg:#d4af37,bg:#0d0d0d,hl:#d4af37,fg+:#0d0d0d,bg+:#d4af37,hl+:#0d0d0d,border:#d4af37'
