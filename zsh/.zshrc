@@ -1,3 +1,11 @@
+# powerlevel10k error set to silent
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
+
+
+
+
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -112,4 +120,36 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#echo -e '\e[4 q'
+
+# adds syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#corrects the syntax color -> correct command = golden color
+ZSH_HIGHLIGHT_STYLES[command]='fg=#d4af37'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=#d4af37'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#d4af37'
+ZSH_HIGHLIGHT_STYLES[function]='fg=#d4af37'
+
+
+#does autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+#corrects the color -> suggestion is dimmer gold
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#8a6f1e'
+
+# art scripts oni and pokemon
+# terminal art on open
+# terminal art on open
+pokemon-colorscripts -r --no-title > ~/.config/fastfetch/pokemon.txt
+fastfetch
+
+if [[ $- == *i* ]]; then
+    if [ "$TERMINAL_ART" = "pokemon" ]; then
+        pokemon-colorscripts -r
+    elif [ "$TERMINAL_ART" = "chafa" ]; then
+        chafa --size=40x20 ~/Pictures/samurai.png
+    fi
+fi
 
