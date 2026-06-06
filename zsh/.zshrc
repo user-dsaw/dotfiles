@@ -153,3 +153,11 @@ if [[ $- == *i* ]]; then
     fi
 fi
 
+
+
+# fzf
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+
+#export FZF_DEFAULT_OPTS='--color=fg:#d4af37,bg:#0d0d0d,hl:#d4af37,fg+:#0d0d0d,bg+:#d4af37,hl+:#0d0d0d,border:#d4af37'
