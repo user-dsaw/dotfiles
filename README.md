@@ -1,7 +1,19 @@
 # dotfiles
 
 Arch Linux + Hyprland workstation setup. One command installs packages, shell, and configs for a working desktop environment.
+> > Arch + Hyprland reproducible setup
 
+### Desktop
+![desktop](assets/desktop.png)
+
+### Fastfetch
+![fastfetch](assets/fastfetch.png)
+
+##workflow
+![workflow](assets/workflow.png)
+
+##rofi
+![rofi](assets/rofi.png)
 ---
 
 ## Result
