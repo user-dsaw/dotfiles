@@ -1,5 +1,5 @@
 # powerlevel10k error set to silent
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+ typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 
 
