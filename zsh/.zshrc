@@ -142,6 +142,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#8a6f1e'
 # art scripts oni and pokemon
 # terminal art on open
 # terminal art on open
+mkdir -p ~/.config/fastfetch
 pokemon-colorscripts -r --no-title > ~/.config/fastfetch/pokemon.txt
 fastfetch
 
@@ -156,8 +157,9 @@ fi
 
 
 # fzf
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+[[ -f /usr/share/fzf/key-bindings.zsh ]] && source /usr/share/fzf/key-bindings.zsh
+[[ -f /usr/share/fzf/completion.zsh ]] && source /usr/share/fzf/completion.zsh
+
 
 ZSH_HIGHLIGHT_STYLES[command]='fg=#d4af37'
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=#d4af37'
