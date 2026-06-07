@@ -9,10 +9,10 @@ Arch Linux + Hyprland workstation setup. One command installs packages, shell, a
 ### Fastfetch
 ![fastfetch](assets/fastfetch.png)
 
-##workflow
+### Workflow
 ![workflow](assets/workflow.png)
 
-##rofi
+### Rofi
 ![rofi](assets/rofi.png)
 ---
 
