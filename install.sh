@@ -269,6 +269,14 @@ stow_dotfiles() {
         stow_package "$pkg"
     done
 
+    # Hyprland v0.55+ overwrites hyprland.conf on first launch for users that are installing / cloning a new dotfile 
+    # even through symlinks into the stow repo. Make it read-only to prevent this.
+    local hypr_conf="$TARGET_HOME/.config/hypr/hyprland.conf"
+    if [[ -L "$TARGET_HOME/.config/hypr" && -f "$hypr_conf" ]]; then
+        chmod 444 "$hypr_conf"
+        log_ok "hyprland.conf protected from overwrite (chmod 444)"
+    fi
+
     echo ""
 }
 
